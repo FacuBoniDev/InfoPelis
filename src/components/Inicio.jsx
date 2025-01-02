@@ -72,10 +72,8 @@ fetchMovies();
 }, []);
 
 return (
-<main>
-    {loading ? (
-    <>
-        <h1>
+<main>        
+    <h1>
         Top 30 películas según{' '}
         <img
             className="imdb"
@@ -89,6 +87,8 @@ return (
             style={{ margin: '.5rem' }}
         />
         </h1>
+    {loading ? (
+    <>
         <div className="wrapper">
         <div className="circle"></div>
         <div className="circle"></div>
