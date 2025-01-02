@@ -45,7 +45,7 @@ return (
             ))}
             
         </div>
-        <p>blabla</p>
+        <p>En proceso profe</p>
     </section>
 );
 }
