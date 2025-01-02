@@ -1,0 +1,32 @@
+.card{
+    background-color: rgba(209, 203, 203, 0.856);
+    padding: 1rem;
+    border-radius: 1rem;
+    max-width: calc(250px + 2rem);
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02); 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.cardImg{
+    height: 350px;
+    width: 250px;
+}
+
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+    font-size: .8rem;
+}
+
+.cardYear{
+    align-self: flex-start;
+    margin-left: .5rem;
+}

@@ -1,0 +1,43 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 10rem;
+    background-color: rgb(251, 251, 253);
+    overflow: hidden;
+    border-bottom: 2px solid rgb(41, 144, 228);
+}
+
+.logo{
+    width: 14rem;
+    height: auto;
+    padding: .5rem;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    gap: .6rem;
+    padding: .8rem;
+    border-radius: 1rem;
+    &:hover{
+        background-color: rgb(241, 237, 237);
+    }
+}
+
+.verMasTarde{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    gap: .6rem;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.espaciador{
+    display: flex;
+    width: 15rem;
+    cursor: default;
+}

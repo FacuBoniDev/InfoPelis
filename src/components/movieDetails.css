@@ -1,0 +1,111 @@
+.movieDetailsContainer{
+    margin-top: 5rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+section{
+    display: flex;
+    gap: 5rem;
+}
+
+.titulo{
+    font-size: 3.5rem;
+    font-family: "Bebas Neue", Arial, serif;
+}
+
+.trama{
+    margin-bottom: 0;
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.poster{
+    width: 400px;
+    height: 600px;
+    border: 5px solid rgb(41, 144, 228);
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.titleYear{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.year{
+    margin-left: 1rem;
+}
+
+.pegi{
+    padding: .2rem;
+    color: rgb(41, 144, 228);
+    border: 1px solid rgb(41, 144, 228);
+    margin-left: 4rem;
+}
+
+.volver{
+    all: unset;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-right: 10rem;
+    padding: .5rem;
+    color: rgb(41, 144, 228);
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    transition: all 0.3s ease;
+}
+
+.volver:hover .flecha {
+    animation: moverFlecha 1.5s infinite alternate;
+}
+
+@keyframes moverFlecha {
+    0% {
+    transform: translateX(0);
+    }
+    50% {
+    transform: translateX(-8px); 
+    }
+    100% {
+    transform: translateX(0); 
+    }
+}
+
+.volver .flecha {
+    transition: transform 0.3s ease;
+    margin-right: 10px;
+}
+
+.barra3{
+    position: fixed;
+    width: 130%;
+    height: 600px;
+    background-color: rgb(41, 144, 228);
+    z-index: -1;
+    transform: rotate(200deg);
+    top: 95%
+}
+
+.barra4{
+    position: fixed;
+    width: 130%;
+    height: 600px;
+    background-color: rgb(41, 144, 228);
+    z-index: -1;
+    transform: rotate(200deg);
+    top: -80%
+}

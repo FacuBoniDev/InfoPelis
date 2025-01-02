@@ -1,0 +1,19 @@
+.barra1{
+    position: fixed;
+    width: 130%;
+    height: 600px;
+    background-color: rgb(41, 144, 228);
+    z-index: -1;
+    transform: rotate(160deg);
+    top: -55%
+}
+
+.barra2{
+    position: fixed;
+    width: 130%;
+    height: 600px;
+    background-color: rgb(41, 144, 228);
+    z-index: -1;
+    transform: rotate(160deg);
+    top: 105%
+}

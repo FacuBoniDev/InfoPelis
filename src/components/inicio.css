@@ -1,0 +1,98 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+h1{
+    margin-left: 2rem;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+height: fit-content;
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 25px
+}
+
+.swiperContainer {
+    overflow-y:visible;
+    margin-top: 25px;
+    overflow: visible;
+    height: 480px !important;
+    display: flex;
+    align-items: center;
+}
+
+.swiper .swiper-initialized .swiper-horizontal{
+    overflow: visible !important;
+    height: 450px !important;
+}
+
+.pagination {
+display: flex;
+align-items: center;
+justify-content: center;
+
+.swiper-pagination-bullet {
+background-color: black;
+height: 10px;
+width: 10px;
+margin-right: 6px;
+opacity: 0.5;
+cursor: pointer;
+border-radius: 100%;
+}
+
+.swiper-pagination-bullet-active {
+background-color: rgb(41, 144, 228);
+opacity: 1;
+}
+}
+
+.swiper-wrapper{
+    display: flex;
+    overflow: visible;
+}
+
+.card2 {
+overflow: visible !important;
+height: 432px !important;
+border: 2px solid transparent;
+}
+
+.card2:hover {
+color: inherit !important;
+background-color: rgb(194, 187, 187) !important;
+transform: none !important;
+transition: none !important;
+border: 2px solid rgb(208, 210, 212);
+}
+
+.swiper-button-next {
+    padding: 1.8rem;
+    border-radius: 1rem;
+    &:hover{
+        background-color: rgba(227, 230, 231, 0.5);
+    }
+}
+.swiper-button-prev{
+    padding: 1.8rem;
+    border-radius: 1rem;
+    &:hover{
+        background-color: rgba(227, 230, 231, 0.5);
+    }
+}
+
+.imdb{
+    height: 40px;
+    width: 100px;
+    margin-inline: .5rem;
+}
