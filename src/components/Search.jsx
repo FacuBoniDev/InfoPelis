@@ -26,7 +26,7 @@ return (
 <div className="containerSearch">
     <input
     type="text"
-    placeholder="Buscar película"
+    placeholder="Busca información de películas y series"
     className="input"
     value={prevSearch}
     onChange={(e) => handleInputChange(e.target.value)}

@@ -6,8 +6,9 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { FaArrowTrendUp } from 'react-icons/fa6';
+import { FaArrowTrendUp, FaGithub } from 'react-icons/fa6';
 import { Recom } from './Recom';
+import { TbApi } from "react-icons/tb";
 
 export function Inicio() {
 const API_KEY = 'a4b0eb1d';
@@ -71,22 +72,10 @@ const fetchMovies = async () => {
 fetchMovies();
 }, []);
 
+const anioActual = new Date().getFullYear();
+
 return (
 <main>        
-    <h1>
-        Top 30 películas según{' '}
-        <img
-            className="imdb"
-            src="public/assets/IMDB_Logo_2016.svg.png"
-            alt="IMDB"
-        />
-        score{' '}
-        <FaArrowTrendUp
-            color="rgb(41, 144, 228)"
-            size={40}
-            style={{ margin: '.5rem' }}
-        />
-        </h1>
     {loading ? (
     <>
         <div className="wrapper">
@@ -99,13 +88,27 @@ return (
         </div>
     </>
     ) : (
-    <>
+    <>  
+        <h1>
+        Top 30 películas según{' '}
+        <img
+            className="imdb"
+            src="public/assets/IMDB_Logo_2016.svg.png"
+            alt="IMDB"
+        />
+        score{' '}
+        <FaArrowTrendUp
+            color="red"
+            size={40}
+            style={{ margin: '.5rem' }}
+        />
+        </h1>
         <div className="container">
         <div className="swiperContainer">
             <Swiper
             modules={[Pagination, Autoplay, Navigation]}
             autoplay={{
-                delay: 1000,
+                delay: 2500,
                 disableOnInteraction: false,
             }}
             loop={true}
@@ -152,6 +155,11 @@ return (
         <div className="pagination" />
         </div>
         <Recom />
+        <footer>
+            <a href='https://www.omdbapi.com' target="_blank"><TbApi className='footerIcon' color='rgb(41, 144, 228)' /></a>
+            <p>{anioActual} FacuBoniDev. All rights reserved. - InfoPelis</p>
+            <a href='https://github.com/FacuBoniDev/InfoPelis' target='blank'><FaGithub className='footerIcon' color='#f1f1f1'/></a>
+        </footer>
     </>
     )}
 </main>

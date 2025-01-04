@@ -1,0 +1,98 @@
+.verMasTardeContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.movieCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px; 
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 15px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); 
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+
+.movieCard:hover{
+    transform: translateY(-5px) scale(1.05); 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.moviePoster {
+    width: 170px;
+    height: 240px;
+    border-radius: 6px;
+    margin-bottom: 6px; 
+}
+
+.removeButton {
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #d9534f;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: .2rem;
+    transition: transform .2s ease-in-out;
+}
+
+.removeButton:hover {
+    color: #c9302c;
+    transform: scale(1.1);
+}
+
+.removeButton svg {
+    pointer-events: none; 
+}
+
+.verMasTardeSection{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    align-items: center;
+}
+
+.verMasTardeTitulo{
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+.noMoviesMessage {
+    font-size: 3rem;
+    color: #666;
+    text-align: center;
+    margin-top: 18rem;
+}
+
+.botonVaciar{
+    font-size: 1.15rem;
+    margin: 2rem;
+    width: fit-content;
+    background-color: rgb(218, 215, 215);
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 2px solid transparent;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+}
+
+.botonVaciar:hover{
+    border: 2px solid rgb(41, 144, 228);
+    transform: scale(1.02);
+}
+
+.memeGift{
+    height: 320px;
+    margin-top: 2rem;
+}

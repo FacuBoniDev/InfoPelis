@@ -22,8 +22,10 @@ header{
     gap: .6rem;
     padding: .8rem;
     border-radius: 1rem;
+    transition: transform .2s ease-in-out;
     &:hover{
         background-color: rgb(241, 237, 237);
+        transform: scale(1.03);
     }
 }
 
@@ -32,8 +34,15 @@ header{
     align-items: center;
     font-size: 1.3rem;
     gap: .6rem;
-    padding: .5rem;
+    padding: .8rem;
     border-radius: 1rem;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+}
+
+.verMasTarde:hover{
+    background-color: rgb(241, 237, 237);    
+    transform: scale(1.03);
 }
 
 .espaciador{

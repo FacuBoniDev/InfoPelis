@@ -6,6 +6,7 @@ import { CardList } from './components/CardList';
 import { MovieDetails } from './components/MovieDetails';
 import { Header } from './components/Header';
 import { Inicio } from './components/Inicio';
+import { VerMasTarde } from './components/VerMasTarde';
 
 function App() {
   const [search, setSearch] = useState('');
@@ -56,11 +57,12 @@ function App() {
   }, [location.pathname]);
 
   const isMovieDetails = matchPath('/movie/:id', location.pathname);
+  const isVerMas = matchPath('/ver-mas-tarde', location.pathname);
 
   return (
     <>
       <Header />
-      {!isMovieDetails && (
+      {!isMovieDetails && !isVerMas && (
         <>
         <Searcher search={search} changeSearch={changeSearch} />        
         <div className='barra1'></div>
@@ -73,6 +75,7 @@ function App() {
         {!isSearching && <Route path="/" element={<Inicio />} />}
         <Route path="/search" element={<CardList data={data} />} />
         <Route path="/movie/:id" element={<MovieDetails />} />
+        <Route path="/ver-mas-tarde" element={<VerMasTarde />} />
       </Routes>
     </>
   );

@@ -16,9 +16,11 @@ export function Header() {
                 alt="Info Pelis Logo" 
             />
             <div className='espaciador'>
-                <div className="verMasTarde">
-                    <p>Ver más tarde</p> <FaRegClock />
-                </div>
+                <Link to="/ver-mas-tarde" style={{ textDecoration: 'none', color: 'inherit', padding:'none'}}>
+                    <div className="verMasTarde">
+                        <p>Ver más tarde</p> <FaRegClock />
+                    </div>
+                </Link>
             </div>
         </header>
     );
