@@ -12,7 +12,7 @@ export function Header() {
             </div>
             <img 
                 className="logo" 
-                src= {import.meta.env.BASE_URL + "../assets/Logo-removebg-preview.png"}
+                src= "../assets/Logo-removebg-preview.png"
                 alt="Info Pelis Logo" 
             />
             <div className='espaciador'>

@@ -9,10 +9,6 @@ import { Inicio } from './components/Inicio';
 import { VerMasTarde } from './components/VerMasTarde';
 
 function App() {
-  const basename =
-  import.meta.env.DEV // Verifica si estás en modo de desarrollo
-    ? '/' // Para local
-    : '/InfoPelis/'; // Para producción
   const [search, setSearch] = useState('');
   const [data, setData] = useState(null);
   const [isSearching, setIsSearching] = useState(false);
