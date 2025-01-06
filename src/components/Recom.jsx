@@ -83,7 +83,7 @@ export function Recom() {
             </div>
             <div className='recomTextoContainer'>
                 <h2 className='recomTitulo'>Recomendados por <span className='infoPelis'>Info Pelis</span></h2>
-                <img src='public/assets/Tsb.gif' alt='memeGift' className='kiddo'></img>
+                <img src={import.meta.env.BASE_URL + 'public/assets/Tsb.gif'} alt='memeGift' className='kiddo'></img>
                 <p className='recomTexto'>Me atrapaste! Es cine 🚬</p>
                 <div className='masTarde' onClick={handleAgregarRecom}>
                     <FaRegClock className='reloj' /> <p>Añadir todo a Ver Más Tarde</p>

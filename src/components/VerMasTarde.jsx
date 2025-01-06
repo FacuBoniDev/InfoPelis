@@ -54,7 +54,7 @@ export function VerMasTarde() {
             {savedMovies.length === 0 ? (
                 <>
                 <p className='noMoviesMessage'>No hay películas en Ver Más Tarde.</p>
-                <img src='public/assets/7VE.gif' alt='memeGift' className='memeGift'></img>
+                <img src={import.meta.env.BASE_URL + 'public/assets/7VE.gif'} alt='memeGift' className='memeGift'></img>
                 <div className='barra2'></div>
                 </>
             ) : (
