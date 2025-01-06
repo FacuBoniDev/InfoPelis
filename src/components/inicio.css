@@ -41,11 +41,10 @@ gap: 25px
 display: flex;
 align-items: center;
 justify-content: center;
-
 .swiper-pagination-bullet {
 background-color: black;
-height: 10px;
-width: 10px;
+height: 12px;
+width: 12px;
 margin-right: 6px;
 opacity: 0.5;
 cursor: pointer;
@@ -124,4 +123,75 @@ footer{
 
 a{
     text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    
+    .swiperContainer{
+        height: 260px !important;
+
+    }
+
+    .pagination{
+        display: none;
+    }
+
+    .swiper .swiper-initialized .swiper-horizontal{
+        overflow: visible !important;
+        height: 250px !important;
+    }
+
+    .card2{
+        height: 230px !important;
+    }
+
+    div.swiper-button-next , div.swiper-button-prev{
+        display: none !important;
+        position: inherit !important;
+    }
+
+    h1{
+        font-size: 1.2rem;
+    }
+
+    .imdb{
+        height: 25px;
+        width: 60px;
+        margin-inline: .3rem;
+    }
+
+    main{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    h1{
+        font-size: .9rem;
+        margin-left: .6rem;
+    }
+
+    .imdb{
+        height: 20px;
+        width: 50px;
+        margin-inline: .2rem;
+    }
+
+    footer{
+        width: 100%;    
+        padding-block: .8rem ;
+        font-size: .6rem;
+        font-weight: 700;
+        padding-inline: 1rem;
+        border-bottom: 2px solid rgb(41, 144, 228);
+        margin-top: .5rem;
+    }
+    
+    .footerIcon{
+        font-size: 1.6rem;
+        cursor: pointer;
+        padding: .2rem;
+        transition: transform .2s ease-in-out;
+    }
 }

@@ -1,9 +1,11 @@
 .verMasTardeContainer {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 50px;
     justify-content: center;
+    align-items: center;
     padding: 20px;
+    width: 100%;
 }
 
 .movieCard {
@@ -95,4 +97,62 @@
 .memeGift{
     height: 320px;
     margin-top: 2rem;
+}
+
+@media  screen and (max-width: 800px) {
+
+    .verMasTardeTitulo{
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    .noMoviesMessage {
+        font-size: 2.5rem;
+        margin-top: 15rem;
+    }
+}
+
+@media  screen and (max-width: 550px) {
+
+    .movieCard {
+        width: 110px; 
+        border-radius: 8px;
+        padding: 12px; 
+    }
+
+    .moviePoster {
+        width: 90px;
+        height: 140px;
+        border-radius: 6px;
+        margin-bottom: 6px; 
+    }
+    
+    .verMasTardeContainer{
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, 110px);
+    }
+
+    .removeButton {
+        margin-top: 5px;
+        font-size: 10px;
+        gap: 4px;
+        padding: .2rem;
+    }
+    
+    .botonVaciar{
+        font-size: .7rem;
+        margin: 1rem;
+        padding: .6rem;
+    }
+
+    .noMoviesMessage {
+        font-size: 1.6rem;
+        margin-top: 12rem;
+    }
+
+    .memeGift{
+        height: 250px;
+        width: auto;
+        margin-top: 1.5rem;
+    }
 }

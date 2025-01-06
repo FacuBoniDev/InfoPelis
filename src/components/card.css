@@ -28,5 +28,24 @@
 
 .cardYear{
     align-self: flex-start;
-    margin-left: .5rem;
+    margin-left: .4rem;
+}
+
+@media  screen and (max-width: 800px) {
+    
+    .card{
+    align-items: center;
+    max-width: calc(120px + 20px);
+    padding: 10px;
+    }
+
+    .cardImg{
+        height: 170px;
+        width: 120px;
+        margin: 0;
+    }
+
+    .cardInfo{
+        font-size: .4rem;
+    }
 }

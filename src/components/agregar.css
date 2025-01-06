@@ -17,3 +17,12 @@
     border: 2px solid rgb(41, 144, 228);
     transform: scale(1.02);
 }
+
+@media screen and (max-width: 900px){
+    
+    .botonAgregar{
+        font-size: 75%;
+        margin: .5rem;
+        padding: .6rem;
+    }
+}

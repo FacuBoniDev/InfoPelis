@@ -17,3 +17,37 @@
     transform: rotate(160deg);
     top: 105%
 }
+
+/* @media screen and (max-width: 1400px){
+    
+} */
+
+@media screen and (max-width: 900px) {
+
+    .barra1{
+        width: 150%;
+        height: 600px;
+        top: -55%
+    }
+
+    .barra2{
+        width: 150%;
+        height: 600px;
+        top: 100%
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .barra1{
+        width: 180%;
+        height: 600px;
+        top: -68%
+    }
+
+    .barra2{
+        width: 180%;
+        height: 600px;
+        top: 100%
+    }
+}

@@ -1,7 +1,22 @@
 .cardContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    float: left;
     margin-block: 4rem;
     gap: 2rem;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .cardContainer{
+        grid-template-columns:  1fr 1fr 1fr 1fr ;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .cardContainer{
+        grid-template-columns:  1fr 1fr ;
+    }
 }
 

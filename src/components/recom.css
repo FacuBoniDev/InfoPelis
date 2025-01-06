@@ -1,13 +1,13 @@
 .recomendados{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     padding: 1.5rem;
     background-color: #f1f1f1;
     border: solid 2px rgb(255, 254, 254);
     margin-block: 10rem 4rem;
     width: 80%;
     border-radius: 2rem;
+    gap: 3rem
 }
 
 .recomContainer{
@@ -31,7 +31,6 @@
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-
 .recomTextoContainer{
     height: 600px;
     width: 500px;
@@ -43,7 +42,7 @@
 }
 
 .recomTitulo{
-    font-size: 4.2rem;
+    font-size: 3.8rem;
     font-weight: 700;
     margin-bottom: 3rem;
 }
@@ -82,10 +81,203 @@
 
 .infoPelis{
     color: rgb(41, 144, 228);
-    font-size: 120%;
+    font-size: 115%;
     font-weight: 800;
 }
 
 .kiddo{
-    height: 200px;
+    height: 190px;
+}
+
+@media screen and (max-width: 1800px){
+
+    .recomTitulo{
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 1700px){
+
+    .recomendados{
+        margin-block: 6rem 2rem;
+        width: 80%;
+    }
+
+    .recomContainer{
+        grid-template-columns: repeat(4, 1fr);
+        gap: .8rem;
+    }
+
+    .recomPoster{
+        height: 220px;
+        width: 150px;
+    }
+
+    .recomTitulo{
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+    
+    .recomTexto{
+        font-size: .8rem;
+        margin-top: 1rem;
+    }
+    
+    .masTarde{
+        padding: .6rem;
+        font-size: 1rem;
+        border-radius: 2rem;
+        margin-top: 2rem;
+    }
+
+    .kiddo{
+        display: flex;
+        width: 80%;
+        height: auto;
+    }
+
+    .recomTextoContainer{
+        padding-block: 0rem;
+        height: auto;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1400px){
+
+    .recomendados{
+        flex-direction: column-reverse;
+        margin-block: 6rem 2rem;
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .recomTextoContainer{
+        margin-top: -2rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .recomendados{
+        margin-block: 3rem 1rem;
+        width: 80%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .recomContainer{
+        grid-template-columns: repeat(4, 1fr);
+        gap: .8rem;
+    }
+
+    .recomPoster{
+        height: 200px;
+        width: 120px;
+    }
+
+    .recomTitulo{
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        margin-top: -1rem;
+    }
+    
+    .recomTexto{
+        font-size: .8rem;
+        margin-top: .2rem;
+    }
+    
+    .masTarde{
+        padding: .4rem;
+        font-size: .8rem;
+        border-radius: 2rem;
+        margin-top: 4rem;
+    }
+
+    .kiddo{
+        display: none;
+    }
+
+    .recomTextoContainer{
+        padding-block: 0rem;
+        height: auto;
+        width: auto;
+        flex: 1;
+    }
+
+    .reloj{
+        margin-right: .5rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .recomContainer{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+    
+    .recomPoster{
+        height: 220px;
+        width: 140px;
+    }
+
+    footer{
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    .recomendados{
+        margin-block: 2rem .5rem;
+        width: 80%;
+        flex-direction: column-reverse;
+        padding: .6rem;
+    }
+
+    .recomContainer{
+        grid-template-columns: repeat(2, 1fr);
+        gap: .8rem;
+    }
+
+    .recomPoster{
+        height: 190px;
+        width: 120px;
+    }
+
+    .recomTitulo{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    
+    .recomTexto{
+        font-size: .8rem;
+        margin-top: .2rem;
+    }
+    
+    .masTarde{
+        padding: .6rem;
+        font-size: 1rem;
+        border-radius: 2rem;
+        margin-top: 3rem;
+    }
+
+    .kiddo{
+        display: none;
+    }
+
+    .recomTextoContainer{
+        padding-block: 0rem;
+        height: auto;
+        width: auto;
+    }
 }

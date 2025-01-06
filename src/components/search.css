@@ -34,3 +34,42 @@ input:focus{
 .button:hover{
     transform: scale(1.08);
 }
+
+@media screen and (max-width: 800px) {
+
+    .containerSearch{
+        width: 25rem;
+        height: 2rem;
+        margin-top: 2rem;
+    }
+
+    input{
+        font-size: .8rem;
+        width: 20rem;
+    }
+
+    .button{
+        font-size: .8rem;
+        padding: .2rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .containerSearch{
+        width: 19rem;
+        height: 1.8rem;
+        margin-top: 1.8rem;
+    }
+
+    input{
+        font-size: .8rem;
+        width: 15rem;
+    }
+
+    .button{
+        font-size: .6rem;
+        padding: .2rem;
+    }
+
+}

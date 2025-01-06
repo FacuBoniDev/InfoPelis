@@ -99,7 +99,6 @@ return (
         score{' '}
         <FaArrowTrendUp
             color="red"
-            size={40}
             style={{ margin: '.5rem' }}
         />
         </h1>
@@ -117,30 +116,25 @@ return (
                 el: '.pagination',
                 clickable: true,
             }}
-            slidesPerView={6}
             breakpoints={{
-                '@0.00': {
-                slidesPerView: 1,
-                spaceBetween: 10,
-                },
-                '@0.50': {
-                slidesPerView: 1.25,
-                spaceBetween: 15,
-                },
-                '@1.00': {
+                300: {
                 slidesPerView: 2,
-                spaceBetween: 15,
+                spaceBetween: 5,
                 },
-                '@1.25': {
-                slidesPerView: 2.5,
-                spaceBetween: 15,
+                600: {
+                slidesPerView: 4,
+                spaceBetween: 5,
                 },
-                '@1.50': {
-                slidesPerView: 3,
-                spaceBetween: 20,
+                800: {
+                slidesPerView: 2.6,
+                spaceBetween: 5,
                 },
-                '@1.75': {
-                slidesPerView: 5.5,
+                1200:{
+                slidesPerView: 3.2,
+                spaceBetween: 5,
+                },
+                1500: {
+                slidesPerView: 5.2,
                 spaceBetween: 20,
                 },
             }}

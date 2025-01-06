@@ -17,7 +17,11 @@ section{
 }
 
 .trama{
-    margin-bottom: 0;
+    display: -webkit-box; /* Necesario para clamping */
+    -webkit-line-clamp: 10; /* Número de líneas visibles (ajustar según el texto y tamaño) */
+    -webkit-box-orient: vertical; /* Orientación del recorte */
+    overflow: hidden; /* Oculta el texto que excede */
+    text-overflow: ellipsis; /* Añade "..." al final */
 }
 
 .infoContainer{
@@ -108,4 +112,160 @@ section{
     z-index: -1;
     transform: rotate(200deg);
     top: -80%
+}
+
+@media screen and (max-width: 1500px){
+
+    .titulo{
+        font-size: 2rem;
+    }
+
+    .year, .pegi{
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    .trama{
+        font-size: .8rem;
+    }
+
+    .data{
+        font-size: .8rem;
+        gap: .6rem;
+    }
+
+    .poster{
+        width: 340px;
+        height: 520px;
+        border: 5px solid rgb(41, 144, 228);
+    }
+
+    .barra3{
+        width: 130%;
+        top: 90%
+    }
+
+    .barra4{
+        width: 130%;
+        top: -75%
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    .movieDetailsContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+        width: 75%;
+        margin-bottom: 3rem;
+        height: 80dvh;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .titulo{
+        font-size: 1.2rem;
+    }
+
+    .year, .pegi{
+        font-size: .6rem;
+    }
+
+    .trama{
+        font-size: .7rem;
+    }
+
+    .data{
+        font-size: .7rem;
+        gap: .5rem;
+    }
+
+    .poster{
+        width: 280px;
+        height: 440px;
+        border: 3px solid rgb(41, 144, 228);
+    }
+
+    .barra3{
+        width: 150%;
+        top: 100%
+    }
+
+    .barra4{
+        width: 150%;
+        top: -75%
+    }
+
+    section{
+        gap: 2rem
+    }
+
+    .titleYear{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .volver{
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    .movieDetailsContainer{
+        margin-top: 4rem;
+        width: 80%;
+        margin-bottom: 3rem;
+        height: 70dvh;
+    }
+
+    .titulo{
+        font-size: 1.4rem;
+    }
+
+    .year, .pegi{
+        font-size: .6rem;
+    }
+
+    .trama{
+        font-size: .7rem;
+        margin-block: 2rem ;
+    }
+
+    .data{
+        font-size: .7rem;
+        gap: .5rem;
+        margin-top: 2rem;
+    }
+
+    .poster{
+        width: 280px;
+        height: 440px;
+        border: 3px solid rgb(41, 144, 228);
+        display: none;
+    }
+
+    .barra3{
+        width: 180%;
+        top: 100%
+    }
+
+    .barra4{
+        width: 180%;
+        top: -75%;
+        display: none;
+    }
+
+    section{
+        gap: 2rem
+    }
+
+    .titleYear{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

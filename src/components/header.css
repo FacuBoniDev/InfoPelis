@@ -47,6 +47,58 @@ header{
 
 .espaciador{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 15rem;
     cursor: default;
+}
+
+@media screen and (max-width: 800px) {
+
+    .logo{
+        width: 10rem;
+        height: auto;
+        padding: .3rem;
+    }
+
+    .home{
+        font-size: 1rem;
+        gap: .3rem;
+        padding: .5rem;
+    }
+
+    .verMasTarde{
+        font-size: 1rem;
+        gap: .3rem;
+        padding: .5rem;
+    }
+
+    header{
+        padding-inline: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .logo{
+        width: 7rem;
+        height: auto;
+        padding: .2rem;
+    }
+
+    .home{
+        font-size: .7rem;
+        gap: .2rem;
+        padding: .2rem;
+    }
+
+    .verMasTarde{
+        font-size: .6rem;
+        gap: .2rem;
+        padding: .2rem;
+    }
+
+    header{
+        padding-inline: 1.5rem;
+    }
 }
