@@ -4,6 +4,7 @@ import { FaRegClock } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import { Link } from 'react-router-dom';
+import kiddo from "../../public/assets/Tsb.gif"
 
 export function Recom() {
     const API_KEY = 'a4b0eb1d';
@@ -83,7 +84,7 @@ export function Recom() {
             </div>
             <div className='recomTextoContainer'>
                 <h2 className='recomTitulo'>Recomendados por <span className='infoPelis'>Info Pelis</span></h2>
-                <img src='../dist/assets/Tsb.gif' alt='memeGift' className='kiddo'></img>
+                <img src={kiddo} alt='memeGift' className='kiddo'></img>
                 <p className='recomTexto'>Me atrapaste! Es cine 🚬</p>
                 <div className='masTarde' onClick={handleAgregarRecom}>
                     <FaRegClock className='reloj' /> <p>Añadir todo a Ver Más Tarde</p>

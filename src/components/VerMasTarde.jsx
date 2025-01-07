@@ -3,6 +3,7 @@ import { FaTrashAlt } from "react-icons/fa";
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast, Bounce } from 'react-toastify';
+import meme from "../../public/assets/7VE.gif"
 
 export function VerMasTarde() {
     const navigate = useNavigate();
@@ -54,7 +55,7 @@ export function VerMasTarde() {
             {savedMovies.length === 0 ? (
                 <>
                 <p className='noMoviesMessage'>No hay películas en Ver Más Tarde.</p>
-                <img src='../dist/assets/7VE.gif' alt='memeGift' className='memeGift'></img>
+                <img src={meme} alt='memeGift' className='memeGift'></img>
                 <div className='barra2'></div>
                 </>
             ) : (

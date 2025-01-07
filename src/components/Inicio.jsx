@@ -9,6 +9,7 @@ import 'swiper/css/navigation';
 import { FaArrowTrendUp, FaGithub } from 'react-icons/fa6';
 import { Recom } from './Recom';
 import { TbApi } from "react-icons/tb";
+import imdb from "../../public/assets/IMDB_Logo_2016.svg.png"
 
 export function Inicio() {
 const API_KEY = 'a4b0eb1d';
@@ -93,7 +94,7 @@ return (
         Top 30 películas según{' '}
         <img
             className="imdb"
-            src="../dist/assets/IMDB_Logo_2016.svg.png"
+            src={imdb}
             alt="IMDB"
         />
         score{' '}
