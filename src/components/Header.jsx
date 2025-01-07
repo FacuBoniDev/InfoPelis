@@ -1,7 +1,7 @@
 import './header.css';
 import { FaHome, FaRegClock } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import logo from "../dist/assets/Logo-removebg-preview.png"
+import logo from "../../public/assets/Logo-removebg-preview.png"
 
 export function Header() {
     return (
