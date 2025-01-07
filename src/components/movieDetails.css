@@ -17,11 +17,11 @@ section{
 }
 
 .trama{
-    display: -webkit-box; /* Necesario para clamping */
-    -webkit-line-clamp: 10; /* Número de líneas visibles (ajustar según el texto y tamaño) */
-    -webkit-box-orient: vertical; /* Orientación del recorte */
-    overflow: hidden; /* Oculta el texto que excede */
-    text-overflow: ellipsis; /* Añade "..." al final */
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .infoContainer{
@@ -149,6 +149,11 @@ section{
         width: 130%;
         top: -75%
     }
+
+    .volver{
+        margin-right: 2rem;
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -210,6 +215,7 @@ section{
 
     .volver{
         margin-right: 2rem;
+        font-size: 1.2rem;
     }
 }
 
