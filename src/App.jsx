@@ -13,7 +13,7 @@ function App() {
   const [data, setData] = useState(null);
   const [isSearching, setIsSearching] = useState(false);
   const API_KEY = 'a4b0eb1d';
-  const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`;
+  const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`;
   const location = useLocation();
   const navigate = useNavigate();
 
