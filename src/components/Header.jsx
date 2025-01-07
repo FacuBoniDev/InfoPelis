@@ -12,7 +12,7 @@ export function Header() {
             </div>
             <img 
                 className="logo" 
-                src= "../assets/Logo-removebg-preview.png"
+                src= "../dist/assets/Logo-removebg-preview.png"
                 alt="Info Pelis Logo" 
             />
             <div className='espaciador'>

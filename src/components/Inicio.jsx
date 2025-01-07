@@ -93,7 +93,7 @@ return (
         Top 30 películas según{' '}
         <img
             className="imdb"
-            src={import.meta.env.BASE_URL + "public/assets/IMDB_Logo_2016.svg.png"}
+            src="../dist/assets/IMDB_Logo_2016.svg.png"
             alt="IMDB"
         />
         score{' '}
