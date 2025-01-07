@@ -11,7 +11,7 @@ export function MovieDetails() {
     const [movie, setMovie] = useState(null);
     const navigate = useNavigate(); 
     const API_KEY = 'a4b0eb1d';
-    const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&i=${id}&plot=full`;
+    const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}&i=${id}&plot=full`;
 
     useEffect(() => {
         const fetchMovieDetails = async () => {

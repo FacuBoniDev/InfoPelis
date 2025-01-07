@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import './search.css';
 import { FaSearch } from "react-icons/fa";
 
-export function Searcher({ search, changeSearch }) {
+export function Searcher({ changeSearch }) {
 const [prevSearch, setPrevSearch] = useState('');
 const navigate = useNavigate();
 

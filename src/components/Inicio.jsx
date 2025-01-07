@@ -12,7 +12,7 @@ import { TbApi } from "react-icons/tb";
 
 export function Inicio() {
 const API_KEY = 'a4b0eb1d';
-const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}`;
+const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}`;
 
 const [movies, setMovies] = useState([]);
 const [loading, setLoading] = useState(true);
