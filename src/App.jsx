@@ -69,7 +69,7 @@ function App() {
       {!isMovieDetails && !isVerMas && (
         <>
         <Searcher search={search} changeSearch={changeSearch} />
-        {errorSearch === true && (
+        {errorSearch === true && search != '' &&(
           <div className='errorSearch'>
             <MdErrorOutline />
             <p > La pelicula que buscaste no existe.</p>

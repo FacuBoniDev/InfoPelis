@@ -10,7 +10,7 @@ return <Inicio />;
 return (
 <div className="cardContainer">
     {data.map((item) => (
-    <Card key={item.imdbID} movie={item} />
+    <Card key={item.imdbID} movie={item} claseNueva=''/>
     ))}
 </div>
 );
