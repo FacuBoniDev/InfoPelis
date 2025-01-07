@@ -8,20 +8,18 @@ import meme from "../../public/assets/7VE.gif"
 export function VerMasTarde() {
     const navigate = useNavigate();
 
-    // Función segura para obtener datos de localStorage
     const getSavedMovies = () => {
         try {
             const storedMovies = localStorage.getItem('savedMovies');
-            return storedMovies ? JSON.parse(storedMovies) : []; // Si no hay datos, retorna un array vacío
+            return storedMovies ? JSON.parse(storedMovies) : []; 
         } catch (error) {
             console.error('Error al parsear localStorage:', error);
-            return []; // Retorna un array vacío en caso de error
+            return []; 
         }
     };
 
     const [savedMovies, setSavedMovies] = useState(getSavedMovies);
 
-    // Sincroniza `savedMovies` con localStorage cada vez que cambia
     useEffect(() => {
         localStorage.setItem('savedMovies', JSON.stringify(savedMovies));
     }, [savedMovies]);
@@ -40,14 +38,14 @@ export function VerMasTarde() {
     };
 
     const handleRemove = (event, imdbID) => {
-        event.stopPropagation(); // Detiene la propagación del clic al contenedor padre
+        event.stopPropagation();
         const updatedMovies = savedMovies.filter((movie) => movie.imdbID !== imdbID);
         setSavedMovies(updatedMovies);
         eliminarToast();
     };
 
     const vaciarTodo = () => {
-        setSavedMovies([]); // Vacía el estado local
+        setSavedMovies([]);
     };
 
     return (
