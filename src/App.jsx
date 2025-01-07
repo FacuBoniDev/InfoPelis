@@ -7,6 +7,7 @@ import { MovieDetails } from './components/MovieDetails';
 import { Header } from './components/Header';
 import { Inicio } from './components/Inicio';
 import { VerMasTarde } from './components/VerMasTarde';
+import { MdErrorOutline } from "react-icons/md";
 
 function App() {
   const [search, setSearch] = useState('');
@@ -16,6 +17,7 @@ function App() {
   const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`;
   const location = useLocation();
   const navigate = useNavigate();
+  const [errorSearch, setErrorSearch] = useState(false);
 
   const changeSearch = (value) => {
     setSearch(value);
@@ -33,8 +35,10 @@ function App() {
             (item) => item.Type === 'movie' || item.Type === 'series'
           );
           setData(filteredData);
+          setErrorSearch(false);
         } else {
-          setData([]);
+          setData([]);          
+          setErrorSearch(true);
         }
       } catch (error) {
         console.log('Error Message: ' + error);
@@ -64,7 +68,13 @@ function App() {
       <Header />
       {!isMovieDetails && !isVerMas && (
         <>
-        <Searcher search={search} changeSearch={changeSearch} />        
+        <Searcher search={search} changeSearch={changeSearch} />
+        {errorSearch === true && (
+          <div className='errorSearch'>
+            <MdErrorOutline />
+            <p > La pelicula que buscaste no existe.</p>
+          </div>
+        )}
         <div className='barra1'></div>
         <div className='barra2'></div>
         </>
